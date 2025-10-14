@@ -11,7 +11,7 @@ From the inferred intention in a HRI scenario the robot can perform correspondin
 For a more in-depth explanation consult the following papers:
 
 - [Concept Paper](https://www.dfki.de/fileadmin/user_upload/import/12351_lubitz_kimmi_cobabir_2022_-_Adrian_Lubitz.pdf)
-- [Full Paper for IEEE RO-MAN Conference](https://arxiv.org/abs/2308.05627)
+- [Full Paper for IEEE RO-MAN Conference](https://ieeexplore.ieee.org/document/10309581)
 
 
 
