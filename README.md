@@ -171,7 +171,7 @@ If you use CoBaIR please consider citating it.
 
 ```BibTeX
 @inproceedings{pub12351,
-  author = {Auer, Adrian and Arriaga Camargo, Luis Octavio and Hassan, Teena and Hoyer, Nina and Kirchner, Elsa Andrea},
+  author = {Auer, Adrian and Arriaga, Octavio and Hassan, Teena and Hoyer, Nina and Kirchner, Elsa Andrea},
   title = {A Bayesian Approach to Context-based Recognition of Human Intention for Context-Adaptive Robot Assistance in Space Missions},
   booktitle = {Proceedings of SpaceCHI 2.0 - Human-Computer Interaction for Space Exploration - A Workshop at CHI 2022. SpaceCHI 2.0: Human-Computer Interaction for Space Exploration (SpaceCHI 2.0-2022), located at ACM CHI 2022, May 1-1, New Orleans, LA, United States},
   year = {2022},
