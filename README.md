@@ -169,6 +169,17 @@ If you use CoBaIR please consider citating it.
 }
 ```
 
+```BibTeX
+@inproceedings{pub12351,
+  author = {Auer, Adrian and Arriaga Camargo, Luis Octavio and Hassan, Teena and Hoyer, Nina and Kirchner, Elsa Andrea},
+  title = {A Bayesian Approach to Context-based Recognition of Human Intention for Context-Adaptive Robot Assistance in Space Missions},
+  booktitle = {Proceedings of SpaceCHI 2.0 - Human-Computer Interaction for Space Exploration - A Workshop at CHI 2022. SpaceCHI 2.0: Human-Computer Interaction for Space Exploration (SpaceCHI 2.0-2022), located at ACM CHI 2022, May 1-1, New Orleans, LA, United States},
+  year = {2022},
+  month = {5},
+  publisher = {ACM}
+}
+```
+
 
 ## Funding
 CoBaIR is currently developed in the [Robotics Group](https://robotik.dfki-bremen.de/de/ueber-uns/universitaet-bremen-arbeitsgruppe-robotik.html) of the [University of Bremen](https://www.uni-bremen.de/), together with the [Robotics Innovation Center](https://robotik.dfki-bremen.de/en/startpage.html) of the **German Research Center for Artificial Intelligence** (DFKI) in **Bremen**.
