@@ -1,7 +1,7 @@
 # ![CoBaIR](docs/images/logo.svg)
 
-CoBaIR is a python library for **Co**ntext **Ba**sed **I**ntention **R**ecognition. 
-It provides the means to infer an intention from given context. 
+CoBaIR is a python library for **Co**ntext **Ba**sed **I**ntention **R**ecognition.
+It provides the means to infer an intention from given context.
 An intention is a binary value e.g. `repair pipe` that can either be present or not. Only one intention can be present at a time.
 Context on the otherhand can have multiple discrete instantiations e.g. `weather:sunny|cloudy|raining`.
 If context values are continuous, discretizer functions can be used to create discrete values.
@@ -15,11 +15,11 @@ For a more in-depth explanation consult the following papers:
 
 
 
-## Install 
+## Install
 ```bash
 pip install CoBaIR
 ```
-You can install the library from your local copy after cloning this repo with pip using `pip install .` 
+You can install the library from your local copy after cloning this repo with pip using `pip install .`
 or install the newest experimental features from the `develop` branch with `pip install git+https://github.com/dfki-ric/CoBaIR.git@develop`
 
 ### Known Issues
@@ -59,7 +59,7 @@ python start_configurator.py
 The configuration file for a two layer bayesian net for context based intention recognition follows the given format:
 
 ```yaml
-# List of contexts. Contexts can have different discrete instantiations. 
+# List of contexts. Contexts can have different discrete instantiations.
 # Number of instantiations must be larger than 1.
 # For all discrete instantiations a prior probability must be given(sum for one context must be 1)
 contexts:
@@ -74,7 +74,7 @@ contexts:
 # List of intentions. Intentions are always binary(either present or not)
 # For every intention the context variables and their influence on the intention is given
 # [very high, high, medium, low, very low, no] => [5, 4, 3, 2, 1, 0]
-intentions: 
+intentions:
   intention 1:
     context 1:
         instantiation 1: int # one out of [5, 4, 3, 2, 1, 0]
@@ -93,7 +93,7 @@ intentions:
         instantiation 1: int # one out of [5, 4, 3, 2, 1, 0]
         .
         instantiation m_n: int # one out of [5, 4, 3, 2, 1, 0]
-# decision_threshold is a float value between 0 and 1 which decides 
+# decision_threshold is a float value between 0 and 1 which decides
 # when an intention should be considered in inference.
 # Probability must be greater than decision_threshold.
 decision_threshold: float
@@ -104,12 +104,12 @@ If you find any Bugs or want to contribute/suggest a new feature you can create 
 
 ## Run tests
 Tests are implemented with [pytest](https://docs.pytest.org/en/7.1.x/).
-To install test dependencies you need to run 
+To install test dependencies you need to run
 
 ```bash
 pip install -r requirements/test_requirements.txt
 ```
-Then you can run 
+Then you can run
 ```bash
 python -m pytest tests/
 ```
@@ -122,12 +122,12 @@ If you want to see coverage for the tests you can run
 coverage run -m pytest tests/
 ```
 
-Use 
+Use
 
 ```bash
 coverage report
 ```
-or 
+or
 
 
 ```bash
@@ -141,12 +141,12 @@ To show results of the coverage analysis.
 Documentation is implemented with the [material theme](https://squidfunk.github.io/mkdocs-material/) for [mkdocs](https://www.mkdocs.org/).
 
 ### Dependencies
-Install all dependencies for building the docu with 
+Install all dependencies for building the docu with
 ```bash
 pip install -r requirements/doc_requirements.txt
 ```
 ### Build
-Build the docu with 
+Build the docu with
 ```bash
 mkdocs build
 ```
@@ -154,6 +154,21 @@ The documentation will be in the `site` folder.
 
 # Authors
 Adrian Lubitz & Arunima Gopikrishnan
+
+## Citation
+If you use CoBaIR please consider citating it.
+
+```BibTeX
+@inproceedings{lubitz2023cobair,
+  title={Cobair: A python library for context-based intention recognition in human-robot-interaction},
+  author={Lubitz, Adrian and Gutzeit, Lisa and Kirchner, Frank},
+  booktitle={2023 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)},
+  pages={2003--2009},
+  year={2023},
+  organization={IEEE}
+}
+```
+
 
 ## Funding
 CoBaIR is currently developed in the [Robotics Group](https://robotik.dfki-bremen.de/de/ueber-uns/universitaet-bremen-arbeitsgruppe-robotik.html) of the [University of Bremen](https://www.uni-bremen.de/), together with the [Robotics Innovation Center](https://robotik.dfki-bremen.de/en/startpage.html) of the **German Research Center for Artificial Intelligence** (DFKI) in **Bremen**.
